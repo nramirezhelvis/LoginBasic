@@ -1,0 +1,23 @@
+<div class="registro">
+    <form [formGroup]="formularioRegisroUsuarios" (ngSubmit)="enviar()">
+        <div class="registro__data">
+
+            <label for="username">Username</label>
+            <input type="text" name="username" id="username" formControlName="username">
+
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password" formControlName="password">
+
+            <label for="gmail">Gmail</label>
+            <input type="email" name="gmail" id="gmail" formControlName="gmail">
+
+            <label for="age">Edad:</label>
+            <input type="number" name="age" id="age" formControlName="age">
+
+        </div>
+        <div class="registro__opciones">
+            <button type="submit">Registrarme</button>
+            <input type="button" value="Ya tienes cuenta" (click)="redirigirLogin()">
+        </div>
+    </form>
+</div>

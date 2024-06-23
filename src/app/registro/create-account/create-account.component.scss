@@ -1,0 +1,85 @@
+$color-blanco: #1100ff;
+$color-negro: #e6215c;
+$sombra-input: 2px 1px 10px 0 rgba(0, 0, 0, 0.301);
+
+.registro {
+    height: 100vh;
+    background: linear-gradient(60deg,
+            $color-blanco ,
+            $color-negro);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    form {
+        padding: 70px;
+        overflow: hidden;
+        border-radius: 30px;
+        /* background-color: #ff00ff34; */
+        background-color: #ffffff;
+        width: 660px;
+        height: 460px;
+        display: flex;
+        flex-direction: column;
+        box-shadow: $sombra-input;
+    }
+
+    &__data {
+        display: flex;
+        flex-direction: column;
+
+        label {
+            /* color: #bce6fffa; */
+            margin-top: 20px;
+            margin-bottom: 4px;
+            font-size: 20px;
+            font-family: "Geologica", sans-serif;
+
+        }
+
+        input {
+            color: #d1fffd;
+            /* background-color: #ffffff4d; */
+            background: linear-gradient(60deg, #5442ff,
+                    #000fe6);
+            border: none;
+            border-radius: 30px;
+            outline: none;
+            margin-top: 10px;
+            padding: 10px 4%;
+            font-size: 15px;
+            font-family: "Geologica", sans-serif;
+            box-shadow: 2px 2px 7px 0px rgba(4, 53, 160, 0.822);
+        }
+
+        .active {
+            background: #ffffff3d;
+            box-shadow: $sombra-input ;
+        }
+    }
+
+    &__opciones {
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+
+        button,
+        input {
+            width: 200px;
+            color: #ffffffea;
+            background: #000fe6;
+            border-radius: 10px;
+            border: none;
+            margin: 10px;
+            padding: 10px 15px;
+            font-size: 18px;
+            font-family: "Geologica", sans-serif;
+            transition: background .1s ease-in-out;
+            box-shadow: 2px 2px 7px 0px black;
+
+            &:hover {
+                background: #4732ff;
+            }
+        }
+    }
+}
